@@ -7,6 +7,8 @@ var chai = require('chai');
 var assert = chai.assert;
 var goLoader = require('../../lib/go-loader');
 
+require('../helpers/helper').modifyTestLoader(goLoader);
+
 describe('Go Loader Tests', function () {
     describe('runGoScript2JS Tests', function () {
         it('runGoScript2JS valid', function () {
