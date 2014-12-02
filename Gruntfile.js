@@ -106,7 +106,7 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        src: ['<%=BuildConfig.testDirectory%>/helpers/**/*.go'],
+                        src: ['<%=BuildConfig.testDirectory%>/helpers/**/*'],
                         dest: '<%=BuildConfig.targetDirectory%>/coverage'
                     }
                 ]
