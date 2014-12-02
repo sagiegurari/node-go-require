@@ -5,8 +5,13 @@ var path = require('path');
 
 module.exports = {
     modifyTestLoader: function (goLoader) {
-        if (!process.env.GOPATH) {
-            console.log('Running tests without GO installed.');
+        var gopherjs = path.join(process.env.GOPATH, 'bin/gopherjs');
+        var isWin = /^win/.test(process.platform);
+        if (isWin) {
+            gopherjs = gopherjs + '.exe';
+        }
+        if ((!process.env.GOPATH) || (!fs.existsSync(gopherjs))) {
+            console.log('Running tests without GO/gopherjs installed.');
             goLoader.runGopherJS = function(goFile) {
                 var jsPath = path.join(__dirname, 'pet.js');
                 var jsString = fs.readFileSync(jsPath, {
