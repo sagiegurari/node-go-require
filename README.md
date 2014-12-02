@@ -43,7 +43,10 @@ js.Module.Set("pet", map[string]interface{}{
 In order to use this library, apart of installing the NPM modules, you will need to setup the following:
 
  * Install Google Go - https://golang.org/doc/install (make sure that GOPATH env variable is defined)
- * Install gopherjs - https://github.com/gopherjs/gopherjs by running 'go get -u github.com/gopherjs/gopherjs'
+ * Install gopherjs - https://github.com/gopherjs/gopherjs by running
+```
+go get -u github.com/gopherjs/gopherjs
+```
 
 ## Limitations
 The go to javascript conversion is done by gopherjs, while this library modifies that generated javascript a bit to fit the proper module.exports needs.
