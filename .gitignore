@@ -1,0 +1,5 @@
+.idea
+target
+.temp
+node_modules
+npm-debug.log

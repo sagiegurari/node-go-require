@@ -1,0 +1,59 @@
+{
+  "name": "node-go-require",
+  "version": "0.0.1",
+  "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test/spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagiegurari/node-go-require.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sagiegurari/node-go-require/issues"
+  },
+  "keywords": [
+    "go",
+    "require"
+  ],
+  "dependencies": {
+    "shelljs": "^0.3.0",
+    "node.extend": "^1.1.3"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "blanket": "*",
+    "mocha-lcov-reporter": "*",
+    "chai": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-jsonlint": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-jslint": "*",
+    "grunt-eslint": "*",
+    "grunt-todos": "*",
+    "grunt-mocha-test": "*",
+    "grunt-blanket": "*",
+    "grunt-coveralls": "*",
+    "grunt-jsdoc": "*"
+  },
+  "author": {
+    "name": "Sagie Gur-Ari",
+    "email": "sgurari@yahoo.com"
+  },
+  "license": "Apache 2",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "test/spec/*-spec.js"
+    }
+  }
+}
