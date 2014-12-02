@@ -57,7 +57,7 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 
 ## Release History
 
- * 2014-12-02   v0.0.2   Initial release.
+ * 2014-12-02   v0.0.3   Initial release.
 
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.

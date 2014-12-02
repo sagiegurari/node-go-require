@@ -13,6 +13,8 @@ describe('Node Go Tests', function () {
     });
 
     it('require test', function () {
+        this.timeout(5000);
+
         var goFile = path.resolve(__dirname, '../helpers/main/main.go');
         var jsModule = require(goFile);
 
