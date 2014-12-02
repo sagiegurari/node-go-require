@@ -57,6 +57,7 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 
 ## Release History
 
+ * 2014-12-02   v0.0.4   Mock gopherjs calls for continues integration tests.
  * 2014-12-02   v0.0.3   Initial release.
 
 ## License
