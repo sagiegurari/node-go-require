@@ -184,11 +184,15 @@ module.exports = function (grunt) {
         'mochaTest:coverageHTML'
     ]);
 
-    grunt.registerTask('test', 'Run all module tests cases.', [
+    grunt.registerTask('coverage', 'Run all module tests cases.', [
         'clean:target',
         'copy:coverage',
         'blanket:full',
         'mochaTest:coverageLCOV',
         'coveralls:full'
+    ]);
+
+    grunt.registerTask('test', 'Run all module tests cases.', [
+        'mochaTest:full'
     ]);
 };
