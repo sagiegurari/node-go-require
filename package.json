@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
