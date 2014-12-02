@@ -13,6 +13,13 @@ module.exports = {
         if ((!process.env.GOPATH) || (!fs.existsSync(gopherjs))) {
             console.log('Running tests without GO/gopherjs installed.');
             goLoader.runGopherJS = function(goFile) {
+                if (goFile.indexOf('error.go') !== -1) {
+                    return {
+                        code: 1,
+                        output: 'mock error'
+                    };
+                }
+
                 var jsPath = path.join(__dirname, 'pet.js');
                 var jsString = fs.readFileSync(jsPath, {
                     encoding: 'utf8'
