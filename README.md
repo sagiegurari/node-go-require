@@ -34,7 +34,7 @@ Do not export to the global namespace, instead export to the module namespace.
 For example:
 
 ```js
-js.Module.Set("pet", map[string]interface{}{
+js.Module.Get("exports").Set("pet", map[string]interface{}{
     "New": New,
 })
 ```
@@ -49,14 +49,13 @@ go get -u github.com/gopherjs/gopherjs
 ```
 
 ## Limitations
-The go to javascript conversion is done by gopherjs, while this library modifies that generated javascript a bit to fit the proper module.exports needs.
-
-However, there are some limitations of running the gopherjs generated code under node runtime.
+The Google Go to javascript conversion is done by gopherjs and there are some limitations of running the gopherjs generated code under node runtime.
 
 To see exact limitations please see gopherjs project at: https://github.com/gopherjs/gopherjs
 
 ## Release History
 
+ * 2014-12-03   v0.0.9   No need to modify generated code
  * 2014-12-03   v0.0.8   Simplified code generation modification
  * 2014-12-02   v0.0.7   Mock gopherjs calls for continues integration tests.
  * 2014-12-02   v0.0.3   Initial release.

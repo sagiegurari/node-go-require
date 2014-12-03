@@ -12,8 +12,10 @@ Pet.prototype.SetName = function (name) {
     this.name = name;
 };
 
-$module.pet = {
-    New: function (name) {
-        return new Pet(name);
+module.exports = {
+    pet: {
+        New: function (name) {
+            return new Pet(name);
+        }
     }
 };
