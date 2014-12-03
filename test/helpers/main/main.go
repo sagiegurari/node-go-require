@@ -21,7 +21,7 @@ func New(name string) *Pet {
 }
 
 func main() {
-	js.Module.Set("pet", map[string]interface{}{
+	js.Module.Get("exports").Set("pet", map[string]interface{}{
 		"New": New,
 	})
 }
