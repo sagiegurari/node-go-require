@@ -55,6 +55,7 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 
 ## Release History
 
+ * 2014-12-07   v0.0.10   Minor internal changes
  * 2014-12-03   v0.0.9   No need to modify generated code
  * 2014-12-03   v0.0.8   Simplified code generation modification
  * 2014-12-02   v0.0.7   Mock gopherjs calls for continues integration tests.
