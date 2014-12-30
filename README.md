@@ -1,6 +1,6 @@
 # node-go-require
 
-[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require)
+[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require) [![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE)
 
 > Load google go script as any javascript modules under nodeJS runtime.
 
@@ -55,11 +55,12 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 
 ## Release History
 
+ * 2014-12-30   v0.0.11   Doc changes
  * 2014-12-07   v0.0.10   Minor internal changes
- * 2014-12-03   v0.0.9   No need to modify generated code
- * 2014-12-03   v0.0.8   Simplified code generation modification
- * 2014-12-02   v0.0.7   Mock gopherjs calls for continues integration tests.
- * 2014-12-02   v0.0.3   Initial release.
+ * 2014-12-03   v0.0.9    No need to modify generated code
+ * 2014-12-03   v0.0.8    Simplified code generation modification
+ * 2014-12-02   v0.0.7    Mock gopherjs calls for continues integration tests.
+ * 2014-12-02   v0.0.3    Initial release.
 
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
