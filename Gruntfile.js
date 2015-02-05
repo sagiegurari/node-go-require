@@ -188,7 +188,11 @@ module.exports = function (grunt) {
         'clean:target',
         'copy:coverage',
         'blanket:full',
-        'mochaTest:coverageLCOV',
+        'mochaTest:coverageLCOV'
+    ]);
+
+    grunt.registerTask('continuesIntegration', 'Run all module tests cases.', [
+        'coverage',
         'coveralls:full'
     ]);
 
