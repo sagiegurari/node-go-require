@@ -55,6 +55,7 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 
 ## Release History
 
+ * 2015-02-05   v0.0.13   Fix continues integration
  * 2015-02-05   v0.0.12   Minor internal quality changes
  * 2014-12-30   v0.0.11   Doc changes
  * 2014-12-07   v0.0.10   Minor internal changes
