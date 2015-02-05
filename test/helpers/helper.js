@@ -13,6 +13,8 @@ module.exports = {
             if (isWin) {
                 gopherjs = gopherjs + '.exe';
             }
+        } else {
+            process.env.GOPATH = '';
         }
 
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
