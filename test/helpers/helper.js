@@ -5,7 +5,8 @@ var path = require('path');
 
 module.exports = {
     modifyTestLoader: function (goLoader) {
-        var gopherjs = path.join(process.env.GOPATH, 'bin/gopherjs');
+        var goPath = process.env.GOPATH || '';
+        var gopherjs = path.join(goPath, 'bin/gopherjs');
         var isWin = /^win/.test(process.platform);
         if (isWin) {
             gopherjs = gopherjs + '.exe';
