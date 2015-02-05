@@ -38,7 +38,7 @@ module.exports = {
                 return {
                     code: 0
                 };
-            }
+            };
         }
     }
 };
