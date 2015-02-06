@@ -53,8 +53,12 @@ The Google Go to javascript conversion is done by gopherjs and there are some li
 
 To see exact limitations please see gopherjs project at: https://github.com/gopherjs/gopherjs
 
+## API Documentation
+See full docs at: [API Docs](docs/api.md)
+
 ## Release History
 
+ * 2015-02-06   v0.0.14   Doc changes.
  * 2015-02-05   v0.0.13   Fix continues integration
  * 2015-02-05   v0.0.12   Minor internal quality changes
  * 2014-12-30   v0.0.11   Doc changes
