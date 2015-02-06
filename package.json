@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -23,25 +23,26 @@
     "node.extend": "^1.1.3"
   },
   "devDependencies": {
-    "mocha": "*",
     "blanket": "*",
-    "mocha-lcov-reporter": "*",
     "chai": "*",
     "grunt": "*",
+    "grunt-blanket": "*",
     "grunt-cli": "*",
-    "load-grunt-tasks": "*",
-    "time-grunt": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-copy": "*",
-    "grunt-jsonlint": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-jslint": "*",
-    "grunt-eslint": "*",
-    "grunt-todos": "*",
-    "grunt-mocha-test": "*",
-    "grunt-blanket": "*",
     "grunt-coveralls": "*",
-    "grunt-jsdoc": "*"
+    "grunt-eslint": "*",
+    "grunt-jsdoc": "*",
+    "grunt-jsdoc-to-markdown": "*",
+    "grunt-jslint": "*",
+    "grunt-jsonlint": "*",
+    "grunt-mocha-test": "*",
+    "grunt-todos": "*",
+    "load-grunt-tasks": "*",
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "time-grunt": "*"
   },
   "author": {
     "name": "Sagie Gur-Ari",
