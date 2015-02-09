@@ -58,6 +58,7 @@ See full docs at: [API Docs](docs/api.md)
 
 ## Release History
 
+ * 2015-02-09   v0.0.15   Grunt cleanups.
  * 2015-02-06   v0.0.14   Doc changes.
  * 2015-02-05   v0.0.13   Fix continues integration
  * 2015-02-05   v0.0.12   Minor internal quality changes
