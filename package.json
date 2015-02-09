@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -33,7 +33,6 @@
     "grunt-contrib-jshint": "*",
     "grunt-coveralls": "*",
     "grunt-eslint": "*",
-    "grunt-jsdoc": "*",
     "grunt-jsdoc-to-markdown": "*",
     "grunt-jslint": "*",
     "grunt-jsonlint": "*",
