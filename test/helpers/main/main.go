@@ -20,8 +20,12 @@ func New(name string) *Pet {
 	return &Pet{name}
 }
 
+func NewJS(name string) js.Object {
+	return js.MakeWrapper(New(name))
+}
+
 func main() {
 	js.Module.Get("exports").Set("pet", map[string]interface{}{
-		"New": New,
+		"New": NewJS,
 	})
 }
