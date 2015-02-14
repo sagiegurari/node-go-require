@@ -33,10 +33,62 @@ Do not export to the global namespace, instead export to the module namespace.
 
 For example:
 
-```js
+```go
 js.Module.Get("exports").Set("pet", map[string]interface{}{
     "New": New,
 })
+```
+
+Full example (GO):
+
+```go
+package main
+
+import (
+	"github.com/gopherjs/gopherjs/js"
+)
+
+type Pet struct {
+	name string
+}
+
+func (p *Pet) Name() string {
+	return p.name
+}
+
+func (p *Pet) SetName(newName string) {
+	p.name = newName
+}
+
+func New(name string) *Pet {
+	return &Pet{name}
+}
+
+func NewJS(name string) js.Object {
+	return js.MakeWrapper(New(name))
+}
+
+func main() {
+	js.Module.Get("exports").Set("pet", map[string]interface{}{
+		"New": NewJS,
+	})
+}
+```
+
+Full example (JavaScript):
+
+```js
+require('node-go-require');
+
+var mainGo = require('./main/main.go');
+
+var pet = mainGo.pet.New('my pet');
+
+console.log(pet.Name());
+
+pet.SetName('new name...');
+
+console.log(pet.Name());
 ```
 
 ## Installation
@@ -58,6 +110,7 @@ See full docs at: [API Docs](docs/api.md)
 
 ## Release History
 
+ * 2015-02-14   v0.0.16   Modified tests and examples due to changes in gopherjs API
  * 2015-02-09   v0.0.15   Grunt cleanups.
  * 2015-02-06   v0.0.14   Doc changes.
  * 2015-02-05   v0.0.13   Fix continues integration
