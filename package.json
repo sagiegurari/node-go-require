@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "chai": "*",
+    "mocha": "*",
     "grunt": "*",
     "grunt-blanket": "*",
     "grunt-cli": "*",
