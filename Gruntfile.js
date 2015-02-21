@@ -194,8 +194,7 @@ module.exports = function (grunt) {
         'jslint:full',
         'eslint:full',
         'todos:full',
-        'coverage',
-        'coveralls:full'
+        'test'
     ]);
 
     grunt.registerTask('test', 'Run all module tests cases.', [
