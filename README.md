@@ -1,6 +1,6 @@
 # node-go-require
 
-[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require) [![bitHound Score](https://www.bithound.io/sagiegurari/node-go-require/badges/score.svg)](https://www.bithound.io/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require) [![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE)
+[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require) [![bitHound Score](https://www.bithound.io/sagiegurari/node-go-require/badges/score.svg)](https://www.bithound.io/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require) [![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE)<br>
 [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://img.shields.io/david/dev/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require#info=devDependencies)
 
 > Load google go script as any javascript modules under nodeJS runtime.
@@ -110,7 +110,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-02-23  | v0.0.18  | Maintenance |
+| 2015-02-23  | v0.0.19  | Maintenance |
 | 2015-02-14  | v0.0.16  | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15  | Grunt cleanups. |
 | 2015-02-06  | v0.0.14  | Doc changes |
