@@ -4,6 +4,7 @@
     "mocha": true
   },
   "rules": {
+    "new-cap": 0,
     "no-console": 0,
     "valid-jsdoc": 0,
     "no-sync": 0,

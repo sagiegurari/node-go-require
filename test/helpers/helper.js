@@ -9,7 +9,7 @@ module.exports = {
         if (process.env.GOPATH) {
             var goPath = process.env.GOPATH || '';
             gopherjs = path.join(goPath, 'bin/gopherjs');
-            var isWin = /^win/.test(process.platform);
+            var isWin = (/^win/).test(process.platform);
             if (isWin) {
                 gopherjs = gopherjs + '.exe';
             }
@@ -17,9 +17,10 @@ module.exports = {
             process.env.GOPATH = '';
         }
 
+        /*jslint stupid: true */
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
             console.log('Running tests without GO/gopherjs installed.');
-            goLoader.runGopherJS = function(goFile) {
+            goLoader.runGopherJS = function (goFile) {
                 if (goFile.indexOf('error.go') !== -1) {
                     return {
                         code: 1,
@@ -27,7 +28,9 @@ module.exports = {
                     };
                 }
 
+                /*jslint nomen: true */
                 var jsPath = path.join(__dirname, 'pet.js');
+                /*jslint nomen: false */
                 var jsString = fs.readFileSync(jsPath, {
                     encoding: 'utf8'
                 });
@@ -47,5 +50,6 @@ module.exports = {
                 };
             };
         }
+        /*jslint stupid: false */
     }
 };
