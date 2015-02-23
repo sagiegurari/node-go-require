@@ -19,9 +19,9 @@ require('node-go-require');
 Now you can require your google go files like any other javascript files, for example:
 
 ```js
-var jsModule = require('./main/main.go');
+var mainGo = require('./main/main.go');
 
-var pet = jsModule.pet.New('my pet');
+var pet = mainGo.pet.New('my pet');
 console.log(pet.Name());
 pet.SetName('new name...');
 console.log(pet.Name());
@@ -83,11 +83,8 @@ require('node-go-require');
 var mainGo = require('./main/main.go');
 
 var pet = mainGo.pet.New('my pet');
-
 console.log(pet.Name());
-
 pet.SetName('new name...');
-
 console.log(pet.Name());
 ```
 
