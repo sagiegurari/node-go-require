@@ -10,8 +10,8 @@
 
 **Namespaces**
 
-* [NodeGoScript](#NodeGoScript)
-  * [NodeGoScript.requireGo(goModule, fileName)](#NodeGoScript.requireGo)
+* [NodeGoRequire](#NodeGoRequire)
+  * [NodeGoRequire.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
  
 <a name="GoLoader"></a>
 #class: GoLoader
@@ -28,7 +28,6 @@
 The GoLoader enables to load google go script files and to load them into the
 node runtime as JS files.
 
-**Access**: private  
 **Author**: Sagie Gur-Ari  
 <a name="GoLoader#runGopherJS"></a>
 ##GoLoader#runGopherJS(goFile, gopherjs)
@@ -60,19 +59,19 @@ the node runtime.
 - goModule `object` - The module for the go script  
 
 **Returns**: `object` - The JS module  
-<a name="NodeGoScript"></a>
-#NodeGoScript
+<a name="NodeGoRequire"></a>
+#NodeGoRequire
 Extends the require capabilities to allow loading of google go
 script files as JS files.
 
 **Author**: Sagie Gur-Ari  
 **Members**
 
-* [NodeGoScript](#NodeGoScript)
-  * [NodeGoScript.requireGo(goModule, fileName)](#NodeGoScript.requireGo)
+* [NodeGoRequire](#NodeGoRequire)
+  * [NodeGoRequire.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
-<a name="NodeGoScript.requireGo"></a>
-##NodeGoScript.requireGo(goModule, fileName)
+<a name="NodeGoRequire.requireGo"></a>
+##NodeGoRequire.requireGo(goModule, fileName)
 The node require implementation for google go scripts.
 
 **Params**
