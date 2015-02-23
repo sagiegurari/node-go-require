@@ -11,6 +11,7 @@
 **Namespaces**
 
 * [NodeGoRequire](#NodeGoRequire)
+  * [NodeGoRequire.goLoader](#NodeGoRequire.goLoader)
   * [NodeGoRequire.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
  
 <a name="GoLoader"></a>
@@ -68,8 +69,14 @@ script files as JS files.
 **Members**
 
 * [NodeGoRequire](#NodeGoRequire)
+  * [NodeGoRequire.goLoader](#NodeGoRequire.goLoader)
   * [NodeGoRequire.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
+<a name="NodeGoRequire.goLoader"></a>
+##NodeGoRequire.goLoader
+The GO loader instance.
+
+**Type**: [GoLoader](#GoLoader)  
 <a name="NodeGoRequire.requireGo"></a>
 ##NodeGoRequire.requireGo(goModule, fileName)
 The node require implementation for google go scripts.
