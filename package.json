@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -50,10 +50,5 @@
   "scripts": {
     "test": "grunt continuesIntegration",
     "docs": "grunt jsdoc2md:api"
-  },
-  "config": {
-    "blanket": {
-      "pattern": "test/spec/*-spec.js"
-    }
   }
 }
