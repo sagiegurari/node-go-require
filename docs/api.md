@@ -73,9 +73,9 @@ require('node-go-require');
 ```
 Now you can require your google go files like any other javascript files, for example:
 ```js
-var mainGo = require('./main/main.go');
+var petGo = require('./pet.go');
 
-var pet = mainGo.pet.New('my pet');
+var pet = petGo.pet.New('my pet');
 console.log(pet.Name());
 pet.SetName('new name...');
 console.log(pet.Name());
@@ -84,33 +84,27 @@ Go source:
 ```go
 package main
 
-import (
-   "github.com/gopherjs/gopherjs/js"
-)
+import "github.com/gopherjs/gopherjs/js"
 
 type Pet struct {
    name string
+}
+
+func New(name string) *js.Object {
+   return js.MakeWrapper(&Pet{name})
 }
 
 func (p *Pet) Name() string {
    return p.name
 }
 
-func (p *Pet) SetName(newName string) {
-   p.name = newName
-}
-
-func New(name string) *Pet {
-   return &Pet{name}
-}
-
-func NewJS(name string) js.Object {
-   return js.MakeWrapper(New(name))
+func (p *Pet) SetName(name string) {
+   p.name = name
 }
 
 func main() {
    js.Module.Get("exports").Set("pet", map[string]interface{}{
-       "New": NewJS,
+      "New": New,
    })
 }
 ```
