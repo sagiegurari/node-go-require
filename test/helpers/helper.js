@@ -29,7 +29,7 @@ module.exports = {
                 }
 
                 /*jslint nomen: true */
-                var jsPath = path.join(__dirname, 'pet.js');
+                var jsPath = path.join(__dirname, 'pet-helper.js');
                 /*jslint nomen: false */
                 var jsString = fs.readFileSync(jsPath, {
                     encoding: 'utf8'

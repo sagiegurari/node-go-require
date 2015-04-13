@@ -1,21 +1,13 @@
 'use strict';
 
-function Pet(name) {
-    this.name = name;
-}
+require('../..');
 
-Pet.prototype.Name = function () {
-    return this.name;
-};
+var mainGo = require('./main/pet.go');
 
-Pet.prototype.SetName = function (name) {
-    this.name = name;
-};
+var pet = mainGo.pet.New('my pet');
 
-module.exports = {
-    pet: {
-        New: function (name) {
-            return new Pet(name);
-        }
-    }
-};
+console.log(pet.Name());
+
+pet.SetName('new name...');
+
+console.log(pet.Name());

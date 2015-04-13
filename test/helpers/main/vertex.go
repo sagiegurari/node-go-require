@@ -17,7 +17,7 @@ func New(x float64, y float64) *Vertex {
 	return &Vertex{x, y}
 }
 
-func NewJS(x float64, y float64) js.Object {
+func NewJS(x float64, y float64) *js.Object {
 	return js.MakeWrapper(New(x, y))
 }
 
