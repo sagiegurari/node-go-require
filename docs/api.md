@@ -115,8 +115,7 @@ func main() {
 
 * [NodeGoRequire](#NodeGoRequire) : <code>object</code>
   * [.goLoader](#NodeGoRequire.goLoader) : <code>[GoLoader](#GoLoader)</code>
-  * _static_
-    * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
+  * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
 <a name="NodeGoRequire.goLoader"></a>
 ### NodeGoRequire.goLoader : <code>[GoLoader](#GoLoader)</code>
@@ -127,7 +126,6 @@ The GO loader instance.
 ### NodeGoRequire.requireGo(goModule, fileName)
 The node require implementation for google go scripts.
 
-**Kind**: static method of <code>[NodeGoRequire](#NodeGoRequire)</code>  
 **Access:** public  
 
 | Param | Type | Description |
