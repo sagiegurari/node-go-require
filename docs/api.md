@@ -72,46 +72,46 @@ script files as JS files.
 **Author:** Sagie Gur-Ari  
 **Example**  
 In order to use google go scripts under node, you need to first require this library as follows
- ```js
- require('node-go-require');
- ```
- Now you can require your google go files like any other javascript files, for example:
- ```js
- var petGo = require('./pet.go');
+```js
+require('node-go-require');
+```
+Now you can require your google go files like any other javascript files, for example:
+```js
+var petGo = require('./pet.go');
 
- var pet = petGo.pet.New('my pet');
- console.log(pet.Name());
- pet.SetName('new name...');
- console.log(pet.Name());
- ```
- Go source:
- ```go
- package main
+var pet = petGo.pet.New('my pet');
+console.log(pet.Name());
+pet.SetName('new name...');
+console.log(pet.Name());
+```
+Go source:
+```go
+package main
 
- import "github.com/gopherjs/gopherjs/js"
+import "github.com/gopherjs/gopherjs/js"
 
- type Pet struct {
-    name string
- }
+type Pet struct {
+   name string
+}
 
- func New(name string) *js.Object {
-    return js.MakeWrapper(&Pet{name})
- }
+func New(name string) *js.Object {
+   return js.MakeWrapper(&Pet{name})
+}
 
- func (p *Pet) Name() string {
-    return p.name
- }
+func (p *Pet) Name() string {
+   return p.name
+}
 
- func (p *Pet) SetName(name string) {
-    p.name = name
- }
+func (p *Pet) SetName(name string) {
+   p.name = name
+}
 
- func main() {
-    js.Module.Get("exports").Set("pet", map[string]interface{}{
-       "New": New,
-    })
- }
- ```
+func main() {
+   js.Module.Get("exports").Set("pet", map[string]interface{}{
+      "New": New,
+   })
+}
+```
 
 * [NodeGoRequire](#NodeGoRequire) : <code>object</code>
   * [.goLoader](#NodeGoRequire.goLoader) : <code>[GoLoader](#GoLoader)</code>
