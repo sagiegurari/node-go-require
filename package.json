@@ -7,10 +7,13 @@
     "lib": "lib",
     "test": "test/spec"
   },
-  "repository": "sagiegurari/node-go-require",
-  "homepage": "https://github.com/sagiegurari/node-go-require.git",
+  "homepage": "http://github.com/sagiegurari/node-go-require",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sagiegurari/node-go-require.git"
+  },
   "bugs": {
-    "url": "https://github.com/sagiegurari/node-go-require/issues"
+    "url": "http://github.com/sagiegurari/node-go-require/issues"
   },
   "keywords": [
     "go",
