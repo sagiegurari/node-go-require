@@ -1,16 +1,14 @@
 {
   "name": "node-go-require",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test/spec"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sagiegurari/node-go-require.git"
-  },
+  "repository": "sagiegurari/node-go-require",
+  "homepage": "https://github.com/sagiegurari/node-go-require.git",
   "bugs": {
     "url": "https://github.com/sagiegurari/node-go-require/issues"
   },
