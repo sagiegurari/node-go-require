@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -20,35 +20,35 @@
     "require"
   ],
   "dependencies": {
-    "shelljs": "^0.5.0",
+    "shelljs": "^0.5.3",
     "node.extend": "^1.1.5"
   },
   "devDependencies": {
-    "blanket": "*",
-    "chai": "*",
-    "grunt": "*",
-    "grunt-blanket": "*",
-    "grunt-cli": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-coveralls": "*",
-    "grunt-eslint": "*",
-    "grunt-jscs": "*",
-    "grunt-jsdoc-to-markdown": "*",
-    "grunt-jslint": "*",
-    "grunt-jsonlint": "*",
-    "grunt-mocha-test": "*",
-    "grunt-todos": "*",
-    "load-grunt-tasks": "*",
-    "mocha-lcov-reporter": "*",
-    "time-grunt": "*"
+    "blanket": "latest",
+    "chai": "latest",
+    "grunt": "latest",
+    "grunt-blanket": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-coveralls": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jscs": "latest",
+    "grunt-jsdoc-to-markdown": "latest",
+    "grunt-jslint": "latest",
+    "grunt-jsonlint": "latest",
+    "grunt-mocha-test": "latest",
+    "grunt-todos": "latest",
+    "load-grunt-tasks": "latest",
+    "mocha-lcov-reporter": "latest",
+    "time-grunt": "latest"
   },
   "author": {
     "name": "Sagie Gur-Ari",
     "email": "sgurari@yahoo.com"
   },
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "scripts": {
     "test": "grunt continuesIntegration",
     "docs": "grunt jsdoc2md:api"
