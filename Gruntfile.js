@@ -182,39 +182,48 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('full', 'Run all build steps.', [
-        'clean:target',
+    grunt.registerTask('cleanup', 'Cleanups', [
+        'clean:target'
+    ]);
+
+    grunt.registerTask('lint', 'Linting tasks.', [
         'jsonlint:full',
         'jshint:full',
         'jslint:full',
         'eslint:full',
         'jscs:full',
-        'todos:full',
-        'jsdoc2md:api',
-        'copy:coverage',
-        'blanket:full',
-        'mochaTest:coverageHTML'
+        'todos:full'
     ]);
 
-    grunt.registerTask('coverage', 'Run all module tests cases.', [
-        'clean:target',
+    grunt.registerTask('coverage-prepare', 'Pre test tasks', [
+        'cleanup',
         'copy:coverage',
-        'blanket:full',
-        'mochaTest:coverageLCOV'
+        'blanket:full'
     ]);
 
-    grunt.registerTask('continuesIntegration', 'Run all module tests cases.', [
-        'jsonlint:full',
-        'jshint:full',
-        'jslint:full',
-        'eslint:full',
-        'jscs:full',
-        'todos:full',
-        'coverage',
+    grunt.registerTask('test', 'Continues integration related tasks.', [
+        'lint',
+        'coverage-ci'
+    ]);
+
+    grunt.registerTask('docs', 'Generate docs.', [
+        'jsdoc2md:api'
+    ]);
+
+    grunt.registerTask('coverage-ci', 'Test for continues integration.', [
+        'coverage-prepare',
+        'mochaTest:coverageLCOV',
         'coveralls:full'
     ]);
 
-    grunt.registerTask('test', 'Run all module tests cases.', [
-        'mochaTest:full'
+    grunt.registerTask('coverage-html', 'Test for standalone builds.', [
+        'coverage-prepare',
+        'mochaTest:coverageHTML'
+    ]);
+
+    grunt.registerTask('build', 'Run all build steps.', [
+        'lint',
+        'docs',
+        'coverage-html'
     ]);
 };
