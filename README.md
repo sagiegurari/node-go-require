@@ -1,7 +1,7 @@
 # node-go-require
 
 [![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require) [![Code Climate](https://codeclimate.com/github/sagiegurari/node-go-require/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/node-go-require) [![bitHound Score](https://www.bithound.io/sagiegurari/node-go-require/badges/score.svg)](https://www.bithound.io/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require)<br>
-[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://img.shields.io/david/dev/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require#info=devDependencies)<br>
+[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://img.shields.io/david/dev/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require#info=devDependencies)<br>
 [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)
 
 > Load google go script as any javascript modules under nodeJS runtime.
@@ -105,7 +105,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-09-02  | v0.0.40  | Maintenance |
+| 2015-09-08  | v0.0.41  | Maintenance |
 | 2015-02-14  | v0.0.16  | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15  | Grunt cleanups. |
 | 2015-02-06  | v0.0.14  | Doc changes |
