@@ -1,16 +1,26 @@
 # node-go-require
 
-[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://img.shields.io/travis/sagiegurari/node-go-require.svg?style=flat)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-go-require.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-go-require) [![Code Climate](https://codeclimate.com/github/sagiegurari/node-go-require/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/node-go-require) [![bitHound Score](https://www.bithound.io/sagiegurari/node-go-require/badges/score.svg)](https://www.bithound.io/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require)<br>
-[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Dependencies](http://img.shields.io/david/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://img.shields.io/david/dev/sagiegurari/node-go-require.svg?style=flat)](https://david-dm.org/sagiegurari/node-go-require#info=devDependencies)<br>
+[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://travis-ci.org/sagiegurari/node-go-require.svg)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-go-require/badge.svg)](https://coveralls.io/r/sagiegurari/node-go-require) [![Code Climate](https://codeclimate.com/github/sagiegurari/node-go-require/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/node-go-require) [![bitHound Score](https://www.bithound.io/sagiegurari/node-go-require/badges/score.svg)](https://www.bithound.io/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require)<br>
+[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Dependency Status](https://david-dm.org/sagiegurari/node-go-require.svg)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://david-dm.org/sagiegurari/node-go-require/dev-status.svg)](https://david-dm.org/sagiegurari/node-go-require#info=devDependencies)<br>
 [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)
 
 > Load google go script as any javascript modules under nodeJS runtime.
 
+* [Overview](#overview)
+* [Usage](#usage)
+* [Installation](#installation)
+* [Limitations](#limitations)
+* [API Documentation](docs/api.md)
+* [Release History](#history)
+* [License](#license)
+
+<a name="overview"></a>
 ## Overview
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
 See https://golang.org/ for more information.
 
+<a name="usage"></a>
 ## Usage
 In order to use google go scripts under node, you need to first require this library as follows
 
@@ -84,6 +94,7 @@ pet.SetName('new name...');
 console.log(pet.Name());
 ```
 
+<a name="installation"></a>
 ## Installation
 In order to use this library, apart of installing the NPM modules, you will need to setup the following:
 
@@ -93,6 +104,7 @@ In order to use this library, apart of installing the NPM modules, you will need
 go get -u github.com/gopherjs/gopherjs
 ```
 
+<a name="limitations"></a>
 ## Limitations
 The Google Go to javascript conversion is done by gopherjs and there are some limitations of running the gopherjs generated code under node runtime.
 
@@ -101,6 +113,7 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
+<a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
@@ -118,5 +131,6 @@ See full docs at: [API Docs](docs/api.md)
 | 2014-12-02  | v0.0.7   | Mock gopherjs calls for continues integration tests. |
 | 2014-12-02  | v0.0.3   | Initial release. |
 
+<a name="license"></a>
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
