@@ -20,7 +20,13 @@ module.exports = {
         /*jslint stupid: true */
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
             console.log('Running tests without GO/gopherjs installed.');
-            goLoader.runGopherJS = function (goFile) {
+
+            var shell = require('shelljs');
+            shell.exec = function (cmd) {
+                cmd = cmd.substring(cmd.indexOf(' build '));
+                var start = cmd.indexOf('"');
+                var goFile = cmd.substring(start + 1, cmd.indexOf('"', start + 2));
+
                 if (goFile.indexOf('error.go') !== -1) {
                     return {
                         code: 1,
