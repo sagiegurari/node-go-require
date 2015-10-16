@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -41,6 +41,7 @@
     "grunt-mocha-test": "latest",
     "grunt-todos": "latest",
     "load-grunt-tasks": "latest",
+    "mocha": "latest",
     "mocha-lcov-reporter": "latest",
     "time-grunt": "latest"
   },
