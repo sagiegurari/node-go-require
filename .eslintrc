@@ -30,7 +30,7 @@
     "func-names": 0,
     "consistent-this": 0,
     "valid-jsdoc": [
-      1,
+      2,
       {
         "requireReturn": false,
         "prefer": {

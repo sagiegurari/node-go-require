@@ -1,12 +1,12 @@
 {
   "name": "node-go-require",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test/spec"
+  "author": {
+    "name": "Sagie Gur-Ari",
+    "email": "sagiegurari@gmail.com"
   },
+  "license": "Apache-2.0",
   "homepage": "http://github.com/sagiegurari/node-go-require",
   "repository": {
     "type": "git",
@@ -19,6 +19,19 @@
     "go",
     "require"
   ],
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test/spec"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "clean": "grunt cleanup",
+    "lint": "grunt lint",
+    "docs": "grunt docs",
+    "build": "grunt build",
+    "precommit": "npm run build"
+  },
   "dependencies": {
     "shelljs": "^0.5.3",
     "node.extend": "^1.1.5"
@@ -45,18 +58,5 @@
     "mocha": "latest",
     "mocha-lcov-reporter": "latest",
     "time-grunt": "latest"
-  },
-  "author": {
-    "name": "Sagie Gur-Ari",
-    "email": "sagiegurari@gmail.com"
-  },
-  "license": "Apache-2.0",
-  "scripts": {
-    "test": "grunt test",
-    "clean": "grunt cleanup",
-    "lint": "grunt lint",
-    "docs": "grunt docs",
-    "build": "grunt build",
-    "precommit": "npm run build"
   }
 }

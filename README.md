@@ -118,7 +118,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-10-24  | v0.0.45  | Maintenance |
+| 2015-11-03  | v0.0.46  | Maintenance |
 | 2015-02-14  | v0.0.16  | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15  | Grunt cleanups. |
 | 2015-02-06  | v0.0.14  | Doc changes |
