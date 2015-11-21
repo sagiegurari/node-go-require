@@ -40,7 +40,7 @@
     "blanket": "latest",
     "chai": "latest",
     "grunt": "latest",
-    "grunt-blanket": "latest",
+    "grunt-blanket": "0.0.9",
     "grunt-cli": "latest",
     "grunt-contrib-clean": "latest",
     "grunt-contrib-copy": "latest",
