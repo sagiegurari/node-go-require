@@ -96,7 +96,13 @@ console.log(pet.Name());
 
 <a name="installation"></a>
 ## Installation
-In order to use this library, apart of installing the NPM modules, you will need to setup the following:
+In order to use this library, just run the following npm install command:
+
+```sh
+npm install --save node-go-require
+```
+
+Apart of installing the NPM modules, you will need to setup the following:
 
  * Install Google Go - https://golang.org/doc/install (make sure that GOPATH env variable is defined)
  * Install gopherjs - https://github.com/gopherjs/gopherjs by running
@@ -118,7 +124,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-11-05  | v0.0.49  | Maintenance |
+| 2015-11-21  | v0.0.50  | Maintenance |
 | 2015-02-14  | v0.0.16  | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15  | Grunt cleanups. |
 | 2015-02-06  | v0.0.14  | Doc changes |
