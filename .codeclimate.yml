@@ -1,0 +1,23 @@
+engines:
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+    - index.js
+    - lib/**/*
+exclude_paths:
+  - test/**/*
+  - test/*
+  - docs/**/*
+  - docs/*
+  - Gruntfile.js
+  - .editorconfig
+  - .codeclimate.yml
+  - LICENSE
+  - README.md
+  - package.json
+  - .*.json
+  - .*.yml
+  - .*rc
