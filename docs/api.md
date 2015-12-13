@@ -1,15 +1,19 @@
 ## Classes
+
 <dl>
 <dt><a href="#GoLoader">GoLoader</a></dt>
 <dd></dd>
 </dl>
+
 ## Objects
+
 <dl>
 <dt><a href="#NodeGoRequire">NodeGoRequire</a> : <code>object</code></dt>
 <dd><p>Extends the require capabilities to allow loading of google go
 script files as JS files.</p>
 </dd>
 </dl>
+
 <a name="GoLoader"></a>
 ## GoLoader
 **Kind**: global class  
@@ -17,10 +21,10 @@ script files as JS files.</p>
 **Author:** Sagie Gur-Ari  
 
 * [GoLoader](#GoLoader)
-  * [new GoLoader()](#new_GoLoader_new)
-  * [#runGopherJS(goFile, gopherjs)](#GoLoader+runGopherJS) ⇒ <code>object</code>
-  * [#runGoScript2JS(goFile)](#GoLoader+runGoScript2JS) ⇒ <code>string</code>
-  * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>object</code>
+    * [new GoLoader()](#new_GoLoader_new)
+    * [#runGopherJS(goFile, gopherjs)](#GoLoader+runGopherJS) ⇒ <code>object</code>
+    * [#runGoScript2JS(goFile)](#GoLoader+runGoScript2JS) ⇒ <code>string</code>
+    * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>object</code>
 
 <a name="new_GoLoader_new"></a>
 ### new GoLoader()
@@ -114,8 +118,8 @@ func main() {
 ```
 
 * [NodeGoRequire](#NodeGoRequire) : <code>object</code>
-  * [.goLoader](#NodeGoRequire.goLoader) : <code>[GoLoader](#GoLoader)</code>
-  * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
+    * [.goLoader](#NodeGoRequire.goLoader) : <code>[GoLoader](#GoLoader)</code>
+    * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
 <a name="NodeGoRequire.goLoader"></a>
 ### NodeGoRequire.goLoader : <code>[GoLoader](#GoLoader)</code>
