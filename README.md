@@ -11,6 +11,7 @@
 * [Installation](#installation)
 * [Limitations](#limitations)
 * [API Documentation](docs/api.md)
+* [Contributing](docs/CONTRIBUTING.md)
 * [Release History](#history)
 * [License](#license)
 
@@ -119,12 +120,15 @@ To see exact limitations please see gopherjs project at: https://github.com/goph
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
+## Contributing
+See [contributing guide](docs/CONTRIBUTING.md)
+
 <a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-12-13  | v0.0.58 | Maintenance |
+| 2015-12-14  | v0.0.59 | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15 | Grunt cleanups. |
 | 2015-02-06  | v0.0.14 | Doc changes |
