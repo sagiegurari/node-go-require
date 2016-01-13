@@ -5,7 +5,7 @@ module.exports.tasks = {
         api: {
             options: {
                 index: true,
-                private: true
+                private: false
             },
             src: '<%=BuildConfig.libDirectory%>/**/*.js',
             dest: 'docs/api.md'
