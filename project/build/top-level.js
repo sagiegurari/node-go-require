@@ -4,7 +4,8 @@ module.exports = function (grunt) {
     grunt.registerTask('coverage-prepare', 'Pre test tasks', [
         'cleanup',
         'copy:coverage',
-        'blanket:full'
+        'blanket:full',
+        'mochaTest:coverageValidation'
     ]);
 
     grunt.registerTask('coverage-ci', 'Test for continues integration.', [

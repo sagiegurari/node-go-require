@@ -17,6 +17,12 @@ module.exports.tasks = {
             },
             src: ['./<%=BuildConfig.targetDirectory%>/coverage/test/**/*spec.js']
         },
+        coverageValidation: {
+            options: {
+                reporter: 'travis-cov'
+            },
+            src: ['./<%=BuildConfig.targetDirectory%>/coverage/test/**/*spec.js']
+        },
         coverageHTML: {
             options: {
                 reporter: 'html-cov',
