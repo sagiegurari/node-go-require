@@ -19,7 +19,7 @@ describe('Go Loader Tests', function () {
 
     describe('runGoScript2JS Tests', function () {
         it('runGoScript2JS valid', function () {
-            this.timeout(5000);
+            this.timeout(90000);
 
             var goFile = path.resolve(__dirname, '../helpers/main/main.go');
             var js = goLoader.runGoScript2JS(goFile);
@@ -29,7 +29,7 @@ describe('Go Loader Tests', function () {
         });
 
         it('runGoScript2JS error', function () {
-            this.timeout(5000);
+            this.timeout(90000);
 
             var goFile = path.resolve(__dirname, '../helpers/main/error.go');
             try {
