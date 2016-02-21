@@ -128,7 +128,7 @@ See [contributing guide](docs/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-02-15  | v0.0.70 | Maintenance |
+| 2016-02-21  | v0.0.71 | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15 | Grunt cleanups. |
 | 2015-02-06  | v0.0.14 | Doc changes |
