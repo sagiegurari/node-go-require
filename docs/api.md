@@ -15,6 +15,7 @@ script files as JS files.</p>
 </dl>
 
 <a name="GoLoader"></a>
+
 ## GoLoader
 **Kind**: global class  
 **Access:** public  
@@ -27,11 +28,13 @@ script files as JS files.</p>
     * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>object</code>
 
 <a name="new_GoLoader_new"></a>
+
 ### new GoLoader()
 The GoLoader enables to load google go script files and to load them into the
 node runtime as JS files.
 
 <a name="GoLoader+runGopherJS"></a>
+
 ### GoLoader#runGopherJS(goFile, gopherjs) ⇒ <code>object</code>
 Runs the gopherjs converter process.
 
@@ -44,6 +47,7 @@ Runs the gopherjs converter process.
 | gopherjs | <code>string</code> | The gopherjs executable file location |
 
 <a name="GoLoader+runGoScript2JS"></a>
+
 ### GoLoader#runGoScript2JS(goFile) ⇒ <code>string</code>
 Converts the provided go file into JS script text.
 
@@ -55,6 +59,7 @@ Converts the provided go file into JS script text.
 | goFile | <code>string</code> | The google go script file path |
 
 <a name="GoLoader+loadGoScript"></a>
+
 ### GoLoader#loadGoScript(goFile, goModule) ⇒ <code>object</code>
 Converts the provided google go file into JS script and loads it into
 the node runtime.
@@ -68,6 +73,7 @@ the node runtime.
 | goModule | <code>object</code> | The module for the go script |
 
 <a name="NodeGoRequire"></a>
+
 ## NodeGoRequire : <code>object</code>
 Extends the require capabilities to allow loading of google go
 script files as JS files.
@@ -122,11 +128,13 @@ func main() {
     * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
 <a name="NodeGoRequire.goLoader"></a>
+
 ### NodeGoRequire.goLoader : <code>[GoLoader](#GoLoader)</code>
 The GO loader instance.
 
 **Access:** public  
 <a name="NodeGoRequire.requireGo"></a>
+
 ### NodeGoRequire.requireGo(goModule, fileName)
 The node require implementation for google go scripts.
 
