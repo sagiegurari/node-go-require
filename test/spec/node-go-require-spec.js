@@ -5,9 +5,9 @@
 var path = require('path');
 var chai = require('chai');
 var assert = chai.assert;
-var library = require('../../lib/node-go-require');
+require('../../lib/node-go-require');
 
-require('../helpers/helper').modifyTestLoader(library.goLoader);
+require('../helpers/helper').modifyTestLoader();
 
 describe('Node Go Tests', function () {
     it('require setup', function () {

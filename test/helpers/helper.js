@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 module.exports = {
-    modifyTestLoader: function (goLoader) {
+    modifyTestLoader: function () {
         var gopherjs;
         if (process.env.GOPATH) {
             var goPath = process.env.GOPATH || '';

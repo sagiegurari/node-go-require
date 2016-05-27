@@ -8,7 +8,7 @@ var assert = chai.assert;
 var rimraf = require('rimraf');
 var goLoader = require('../../lib/go-loader');
 
-require('../helpers/helper').modifyTestLoader(goLoader);
+require('../helpers/helper').modifyTestLoader();
 
 describe('Go Loader Tests', function () {
     /*jslint nomen: true*/
