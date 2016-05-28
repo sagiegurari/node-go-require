@@ -19,7 +19,7 @@
 ## Overview
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
-See https://golang.org/ for more information.
+See [golang.org](https://golang.org/) for more information.
 
 <a name="usage"></a>
 ## Usage
@@ -60,25 +60,25 @@ package main
 import "github.com/gopherjs/gopherjs/js"
 
 type Pet struct {
-	name string
+  name string
 }
 
 func New(name string) *js.Object {
-	return js.MakeWrapper(&Pet{name})
+  return js.MakeWrapper(&Pet{name})
 }
 
 func (p *Pet) Name() string {
-	return p.name
+  return p.name
 }
 
 func (p *Pet) SetName(name string) {
-	p.name = name
+  p.name = name
 }
 
 func main() {
-	js.Module.Get("exports").Set("pet", map[string]interface{}{
-		"New": New,
-	})
+  js.Module.Get("exports").Set("pet", map[string]interface{}{
+    "New": New,
+  })
 }
 ```
 
@@ -105,9 +105,10 @@ npm install --save node-go-require
 
 Apart of installing the NPM modules, you will need to setup the following:
 
- * Install Google Go - https://golang.org/doc/install (make sure that GOPATH env variable is defined)
- * Install gopherjs - https://github.com/gopherjs/gopherjs by running
-```
+* Install Google Go - [installation guide](https://golang.org/doc/install) (make sure that GOPATH env variable is defined)
+* Install gopherjs - [gopherjs](https://github.com/gopherjs/gopherjs) by running
+
+```sh
 go get -u github.com/gopherjs/gopherjs
 ```
 
@@ -115,7 +116,7 @@ go get -u github.com/gopherjs/gopherjs
 ## Limitations
 The Google Go to javascript conversion is done by gopherjs and there are some limitations of running the gopherjs generated code under node runtime.
 
-To see exact limitations please see gopherjs project at: https://github.com/gopherjs/gopherjs
+To see exact limitations please see gopherjs project at: [gopherjs](https://github.com/gopherjs/gopherjs)
 
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
@@ -128,7 +129,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-05-27  | v0.0.80 | Maintenance |
+| 2016-05-28  | v0.0.81 | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15 | Grunt cleanups. |
 | 2015-02-06  | v0.0.14 | Doc changes |
