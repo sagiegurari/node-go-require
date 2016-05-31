@@ -1,5 +1,5 @@
 language: node_js
-sudo: true
+sudo: false
 node_js:
   - "6.0"
   - "5.0"
@@ -12,9 +12,4 @@ node_js:
   - "0.10"
   - "iojs"
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq golang
-  - mkdir -p $HOME/go_workspace
-  - export GOPATH=$HOME/go_workspace
-  - go get -u github.com/gopherjs/gopherjs
   - npm install -g npm
