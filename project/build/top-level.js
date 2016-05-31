@@ -7,7 +7,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('coverage', 'Test for standalone builds.', [
         'coverage-prepare',
-        'mocha_istanbul:coverage'
+        'mocha_istanbul:coverage',
+        'integration-test'
     ]);
 
     grunt.registerTask('coverage-ci', 'Test for continues integration.', [
