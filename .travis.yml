@@ -12,7 +12,8 @@ node_js:
   - "0.10"
   - "iojs"
 before_install:
-  - sudo apt-get update golang
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq golang
   - mkdir -p $HOME/go_workspace
   - export GOPATH=$HOME/go_workspace
   - go get -u github.com/gopherjs/gopherjs
