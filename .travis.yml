@@ -13,10 +13,6 @@ node_js:
   - "iojs"
 before_install:
   - npm install -g npm
+  - mkdir -p $HOME/go_workspace
+  - export GOPATH=$HOME/go_workspace
   - go get -u github.com/gopherjs/gopherjs
-addons:
-  apt:
-    sources:
-      - ubuntu-lxc/lxd-stable
-    packages:
-      - golang
