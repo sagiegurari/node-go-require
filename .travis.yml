@@ -16,3 +16,8 @@ before_install:
   - mkdir -p $HOME/go_workspace
   - export GOPATH=$HOME/go_workspace
   - go get -u github.com/gopherjs/gopherjs
+addons:
+  apt:
+    packages:
+      - golang
+
