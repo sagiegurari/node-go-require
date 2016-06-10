@@ -16,6 +16,7 @@ ratings:
   paths:
     - index.js
     - lib/**/*
+    - tasks/**/*
 exclude_paths:
   - test/**/*
   - test/*
