@@ -7,8 +7,7 @@ module.exports = function (grunt) {
                 full: {
                     src: [
                         '*.js',
-                        '<%=BuildConfig.libDirectory%>/**/*.js',
-                        '<%=BuildConfig.buildDirectory%>/**/*.js'
+                        '<%=BuildConfig.libDirectory%>/**/*.js'
                     ],
                     options: {
                         edition: 'latest',

@@ -9,8 +9,7 @@ module.exports.tasks = {
             files: {
                 src: [
                     '*.js',
-                    '<%=BuildConfig.libDirectory%>/**/*.js',
-                    '<%=BuildConfig.buildDirectory%>/**/*.js'
+                    '<%=BuildConfig.libDirectory%>/**/*.js'
                 ]
             }
         }
