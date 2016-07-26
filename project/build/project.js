@@ -19,9 +19,9 @@ module.exports = function (grunt) {
             var directory = path.join(__dirname, 'integration');
             var file = path.join(directory, 'build.sh');
 
-            /*eslint-disable no-sync*/
             grunt.log.writeln('Running integration test script.');
-            fs.fchmodSync(file, 1411);
+            /*eslint-disable no-sync*/
+            fs.chmodSync(file, 1411);
             childProcess.execFileSync(file, {
                 cwd: directory,
                 encoding: 'utf8'
