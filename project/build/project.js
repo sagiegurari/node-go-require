@@ -14,12 +14,14 @@ module.exports = function (grunt) {
 
             var childProcess = require('child_process');
             var path = require('path');
+            var fs = require('fs');
 
             var directory = path.join(__dirname, 'integration');
             var file = path.join(directory, 'build.sh');
 
             /*eslint-disable no-sync*/
             grunt.log.writeln('Running integration test script.');
+            fs.fchmodSync(file, 1411);
             childProcess.execFileSync(file, {
                 cwd: directory,
                 encoding: 'utf8'
