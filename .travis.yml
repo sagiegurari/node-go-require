@@ -13,3 +13,5 @@ before_install:
   - chmod -R 777 ./project/build/integration
 env:
   - DOCKER_INTEGRATION_TEST_NODE_VERSION=6
+services:
+  - docker
