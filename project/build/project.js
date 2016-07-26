@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
     grunt.registerMultiTask('docker-integration-test', function runTask() {
         /*eslint-disable no-invalid-this*/
-        if (global.build.options.BuildConfig.nodeMajorVersion === process.env.DOCKER_INTEGRATION_TEST_NODE_VERSION) {
+        if (String(global.build.options.BuildConfig.nodeMajorVersion) === process.env.DOCKER_INTEGRATION_TEST_NODE_VERSION) {
             grunt.log.writeln('Integration test requested.');
 
             var childProcess = require('child_process');
