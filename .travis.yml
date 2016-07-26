@@ -1,5 +1,5 @@
 language: node_js
-sudo: false
+sudo: true
 node_js:
   - "6"
   - "5"
@@ -9,3 +9,5 @@ node_js:
   - "iojs"
 before_install:
   - npm install -g npm
+env:
+  - DOCKER_INTEGRATION_TEST_NODE_VERSION=6

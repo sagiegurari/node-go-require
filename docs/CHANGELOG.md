@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-07-26  | v0.1.2  | Add integration test via docker |
 | 2016-07-25  | v0.1.1  | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15 | Grunt cleanups. |
