@@ -21,7 +21,6 @@ module.exports = function (grunt) {
 
             grunt.log.writeln('Running integration test script.');
             /*eslint-disable no-sync*/
-            fs.chmodSync(file, 1411);
             childProcess.execFileSync(file, {
                 cwd: directory,
                 encoding: 'utf8'
