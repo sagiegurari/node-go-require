@@ -14,7 +14,6 @@ module.exports = function (grunt) {
 
             var childProcess = require('child_process');
             var path = require('path');
-            var fs = require('fs');
 
             var directory = path.join(__dirname, 'integration');
             var file = path.join(directory, 'build.sh');
