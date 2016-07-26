@@ -21,11 +21,13 @@ module.exports = function (grunt) {
 
             grunt.log.writeln('Running integration test script.');
             /*eslint-disable no-sync*/
-            childProcess.execFileSync(file, {
+            var output = childProcess.execFileSync(file, {
                 cwd: directory,
                 encoding: 'utf8'
             });
             /*eslint-enable no-sync*/
+
+            grunt.log.writeln(output);
         } else {
             grunt.log.writeln('Skipping integration test.');
         }
