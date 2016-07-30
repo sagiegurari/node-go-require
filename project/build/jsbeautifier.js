@@ -9,7 +9,7 @@ module.exports.tasks = {
             src: [
                 '*.js',
                 '<%=BuildConfig.libDirectory%>/**/*.js',
-                'project/build/**/*.js'
+                'project/**/*.js'
             ]
         }
     }
