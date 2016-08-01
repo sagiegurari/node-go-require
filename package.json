@@ -1,6 +1,6 @@
 {
   "name": "node-go-require",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Load Google GO files as any javascript modules under nodeJS runtime.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -31,6 +31,7 @@
     "docs": "grunt docs",
     "format": "grunt format",
     "build": "grunt build",
+    "jstest": "grunt jstest",
     "prepush": "npm run build",
     "grunt": "grunt"
   },
