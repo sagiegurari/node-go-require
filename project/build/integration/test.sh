@@ -13,4 +13,4 @@ cd ./node-go-require
 
 npm --loglevel error --development install
 
-npm run grunt coverage
+npm run grunt jstest

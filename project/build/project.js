@@ -4,7 +4,7 @@
 
 module.exports = function (grunt) {
     grunt.registerTask('integration-test', 'Run integration tests', [
-        'force:docker-integration-test'
+        'docker-integration-test'
     ]);
 
     grunt.registerMultiTask('docker-integration-test', function runTask() {
