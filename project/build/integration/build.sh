@@ -2,7 +2,7 @@
 
 set -ev
 
-cd "$(dirname "$0")"
+cd "${0%/*}"
 
 docker build -t test .
 
