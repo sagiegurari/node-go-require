@@ -1,42 +1,41 @@
 'use strict';
 
-/*jslint nomen: true, stupid: true*/
+/*jslint nomen: true*/
 
 module.exports = function (grunt) {
+    var path = require('path');
+
     grunt.registerTask('integration-test', 'Run integration tests', [
         'docker-integration-test'
     ]);
 
-    grunt.registerMultiTask('docker-integration-test', function runTask() {
-        /*eslint-disable no-invalid-this*/
+    grunt.registerTask('docker-integration-test', function runTask() {
         if (String(global.build.options.BuildConfig.nodeMajorVersion) === process.env.DOCKER_INTEGRATION_TEST_NODE_VERSION) {
             grunt.log.writeln('Integration test requested.');
 
-            var childProcess = require('child_process');
-            var path = require('path');
-
-            var directory = path.join(__dirname, 'integration');
-            var file = path.join(directory, 'build.sh');
-
-            grunt.log.writeln('Running integration test script.');
-            /*eslint-disable no-sync*/
-            var output = childProcess.execFileSync(file, {
-                cwd: directory,
-                encoding: 'utf8'
-            });
-            /*eslint-enable no-sync*/
-
-            grunt.log.writeln(output);
+            grunt.task.run('shell:docker');
         } else {
             grunt.log.writeln('Skipping integration test.');
         }
-        /*eslint-enable no-invalid-this*/
     });
 
     return {
         tasks: {
-            'docker-integration-test': {
-                full: {}
+            shell: {
+                options: {
+                    stdout: true,
+                    stderr: true,
+                    stdin: false,
+                    failOnError: true
+                },
+                docker: {
+                    command: 'build.sh',
+                    execOptions: {
+                        cwd: path.join(__dirname, 'integration'),
+                        encoding: 'utf8',
+                        maxBuffer: 1024000000
+                    }
+                }
             }
         }
     };
