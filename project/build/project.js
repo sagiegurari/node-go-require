@@ -4,6 +4,7 @@
 
 module.exports = function (grunt) {
     var path = require('path');
+    var integrationDirectory = path.join(__dirname, 'integration');
 
     grunt.registerTask('integration-test', 'Run integration tests', [
         'docker-integration-test'
@@ -29,9 +30,9 @@ module.exports = function (grunt) {
                     failOnError: true
                 },
                 docker: {
-                    command: 'build.sh',
+                    command: path.join(integrationDirectory, 'build.sh'),
                     execOptions: {
-                        cwd: path.join(__dirname, 'integration'),
+                        cwd: integrationDirectory,
                         encoding: 'utf8',
                         maxBuffer: 1024000000
                     }
