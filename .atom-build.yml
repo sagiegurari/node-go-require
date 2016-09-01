@@ -18,6 +18,16 @@ targets:
         env:
             NODE_ENV: "development"
         atomCommandName: "atom-custom:npmtest"
+    debug:
+        cmd: "npm"
+        name: "npm debug tests"
+        args:
+            - "run"
+            - "debug"
+        sh: true
+        env:
+            NODE_ENV: "development"
+        atomCommandName: "atom-custom:npmdebug"
     format:
         cmd: "npm"
         name: "npm format"
