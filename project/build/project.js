@@ -10,8 +10,12 @@ module.exports = function (grunt) {
         'docker-integration-test'
     ]);
 
+    grunt.registerTask('project-docs', 'Create project docs', [
+        'empty'
+    ]);
+
     grunt.registerTask('docker-integration-test', function runTask() {
-        if (String(global.build.options.BuildConfig.nodeMajorVersion) === process.env.DOCKER_INTEGRATION_TEST_NODE_VERSION) {
+        if (String(global.build.options.buildConfig.nodeMajorVersion) === process.env.DOCKER_INTEGRATION_TEST_NODE_VERSION) {
             grunt.log.writeln('Integration test requested.');
 
             grunt.task.run('shell:docker');

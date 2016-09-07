@@ -1,16 +1,5 @@
 'use strict';
 
-module.exports.tasks = {
-    jsbeautifier: {
-        full: {
-            options: {
-                config: '.jsbeautifyrc'
-            },
-            src: [
-                '*.js',
-                '<%=BuildConfig.libDirectory%>/**/*.js',
-                'project/**/*.js'
-            ]
-        }
-    }
-};
+var commons = require('js-project-commons');
+
+module.exports = commons.grunt.jsbeautifier;
