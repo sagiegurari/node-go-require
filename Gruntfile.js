@@ -1,18 +1,16 @@
 'use strict';
 
-/*jslint nomen: true */
+/*jslint nomen: true*/
 //jscs:disable disallowDanglingUnderscores
 /*eslint-disable no-underscore-dangle*/
 
 module.exports = function (grunt) {
     var commons = require('js-project-commons');
 
-    var projectConfig = require('./project/build/project');
-
     commons.grunt.config.initConfig(grunt, {
         buildConfig: {
             projectRoot: __dirname,
             nodeProject: true
         }
-    }, projectConfig);
+    });
 };
