@@ -9,7 +9,7 @@ node_js:
   - "iojs"
 before_install:
   - npm install -g npm
-before_install:
+before_script:
   - chmod -R 777 ./project/build/integration
 env:
   - DOCKER_INTEGRATION_TEST_NODE_VERSION=6
