@@ -12,9 +12,7 @@ var goLoader = require('../../lib/go-loader');
 require('../helpers/helper').modifyTestLoader();
 
 describe('Go Loader Tests', function () {
-    /*jslint nomen: true*/
     var tempPath = path.join(__dirname, '../../.temp');
-    /*jslint nomen: false*/
 
     rimraf.sync(tempPath);
 
