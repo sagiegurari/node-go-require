@@ -1,6 +1,7 @@
 language: node_js
 sudo: true
 node_js:
+  - "7"
   - "6"
   - "5"
   - "4"
@@ -12,6 +13,6 @@ before_install:
 before_script:
   - chmod -R 777 ./project/build/integration
 env:
-  - DOCKER_INTEGRATION_TEST_NODE_VERSION=6
+  - DOCKER_INTEGRATION_TEST_NODE_VERSION=7
 services:
   - docker
