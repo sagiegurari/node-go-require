@@ -7,6 +7,8 @@
 module.exports = function (grunt) {
     var commons = require('js-project-commons');
 
+    grunt.loadNpmTasks('grunt-shell');
+
     commons.grunt.config.initConfig(grunt, {
         buildConfig: {
             projectRoot: __dirname,
