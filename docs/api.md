@@ -23,9 +23,9 @@ script files as JS files.</p>
 
 * [GoLoader](#GoLoader)
     * [new GoLoader()](#new_GoLoader_new)
-    * [#runGopherJS(goFile, gopherjs)](#GoLoader+runGopherJS) ⇒ <code>object</code>
-    * [#runGoScript2JS(goFile)](#GoLoader+runGoScript2JS) ⇒ <code>string</code>
-    * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>object</code>
+    * [#runGopherJS(goFile, gopherjs)](#GoLoader+runGopherJS) ⇒ <code>Object</code>
+    * [#runGoScript2JS(goFile)](#GoLoader+runGoScript2JS) ⇒ <code>String</code>
+    * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>Object</code>
 
 <a name="new_GoLoader_new"></a>
 
@@ -35,42 +35,42 @@ node runtime as JS files.
 
 <a name="GoLoader+runGopherJS"></a>
 
-### GoLoader#runGopherJS(goFile, gopherjs) ⇒ <code>object</code>
+### GoLoader#runGopherJS(goFile, gopherjs) ⇒ <code>Object</code>
 Runs the gopherjs converter process.
 
-**Returns**: <code>object</code> - The process execution output (see shelljs for more information)  
+**Returns**: <code>Object</code> - The process execution output (see shelljs for more information)  
 **Access:** public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| goFile | <code>string</code> | The google go script file path |
-| gopherjs | <code>string</code> | The gopherjs executable file location |
+| goFile | <code>String</code> | The google go script file path |
+| gopherjs | <code>String</code> | The gopherjs executable file location |
 
 <a name="GoLoader+runGoScript2JS"></a>
 
-### GoLoader#runGoScript2JS(goFile) ⇒ <code>string</code>
+### GoLoader#runGoScript2JS(goFile) ⇒ <code>String</code>
 Converts the provided go file into JS script text.
 
-**Returns**: <code>string</code> - The JS string of the converted go script  
+**Returns**: <code>String</code> - The JS string of the converted go script  
 **Access:** public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| goFile | <code>string</code> | The google go script file path |
+| goFile | <code>String</code> | The google go script file path |
 
 <a name="GoLoader+loadGoScript"></a>
 
-### GoLoader#loadGoScript(goFile, goModule) ⇒ <code>object</code>
+### GoLoader#loadGoScript(goFile, goModule) ⇒ <code>Object</code>
 Converts the provided google go file into JS script and loads it into
 the node runtime.
 
-**Returns**: <code>object</code> - The JS module  
+**Returns**: <code>Object</code> - The JS module  
 **Access:** public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| goFile | <code>string</code> | The go script file path |
-| goModule | <code>object</code> | The module for the go script |
+| goFile | <code>String</code> | The go script file path |
+| goModule | <code>Object</code> | The module for the go script |
 
 <a name="NodeGoRequire"></a>
 
@@ -142,6 +142,6 @@ The node require implementation for google go scripts.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| goModule | <code>object</code> | The module for the go script |
-| fileName | <code>string</code> | The go script file name |
+| goModule | <code>Object</code> | The module for the go script |
+| fileName | <code>String</code> | The go script file name |
 
