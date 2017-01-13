@@ -129,7 +129,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-12-31  | v1.0.22 | Maintenance |
+| 2017-01-13  | v1.0.23 | Maintenance |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
 | 2016-07-25  | v0.1.1  | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
