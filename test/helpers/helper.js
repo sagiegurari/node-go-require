@@ -47,6 +47,10 @@ module.exports = {
                 jsFile = path.basename(jsFile);
                 jsPath = path.join(tempPath, jsFile);
 
+                if (cmd.indexOf('-m') !== -1) {
+                    jsString = jsString.split('\n').join('');
+                }
+
                 fs.writeFileSync(jsPath, jsString, {
                     encoding: 'utf8'
                 });

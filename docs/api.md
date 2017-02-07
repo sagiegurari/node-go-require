@@ -23,9 +23,10 @@ script files as JS files.</p>
 
 * [GoLoader](#GoLoader)
     * [new GoLoader()](#new_GoLoader_new)
-    * [#runGopherJS(goFile, gopherjs)](#GoLoader+runGopherJS) ⇒ <code>Object</code>
-    * [#runGoScript2JS(goFile)](#GoLoader+runGoScript2JS) ⇒ <code>String</code>
-    * [#loadGoScript(goFile, goModule)](#GoLoader+loadGoScript) ⇒ <code>Object</code>
+    * [#createGopherJSCommand(goFile, gopherjs, [minify])](#GoLoader+createGopherJSCommand) ⇒ <code>String</code>
+    * [#runGopherJS(goFile, gopherjs, [minify])](#GoLoader+runGopherJS) ⇒ <code>Object</code>
+    * [#runGoScript2JS(goFile, [options])](#GoLoader+runGoScript2JS) ⇒ <code>String</code>
+    * [#loadGoScript(goFile, goModule, [options])](#GoLoader+loadGoScript) ⇒ <code>Object</code>
 
 <a name="new_GoLoader_new"></a>
 
@@ -33,44 +34,63 @@ script files as JS files.</p>
 The GoLoader enables to load google go script files and to load them into the
 node runtime as JS files.
 
+<a name="GoLoader+createGopherJSCommand"></a>
+
+### GoLoader#createGopherJSCommand(goFile, gopherjs, [minify]) ⇒ <code>String</code>
+Runs the gopherjs converter process.
+
+**Returns**: <code>String</code> - The generate command  
+**Access:** public  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| goFile | <code>String</code> |  | The google go script file path |
+| gopherjs | <code>String</code> |  | The gopherjs executable file location |
+| [minify] | <code>Boolean</code> | <code>false</code> | True to minify the generated code |
+
 <a name="GoLoader+runGopherJS"></a>
 
-### GoLoader#runGopherJS(goFile, gopherjs) ⇒ <code>Object</code>
+### GoLoader#runGopherJS(goFile, gopherjs, [minify]) ⇒ <code>Object</code>
 Runs the gopherjs converter process.
 
 **Returns**: <code>Object</code> - The process execution output (see shelljs for more information)  
 **Access:** public  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| goFile | <code>String</code> | The google go script file path |
-| gopherjs | <code>String</code> | The gopherjs executable file location |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| goFile | <code>String</code> |  | The google go script file path |
+| gopherjs | <code>String</code> |  | The gopherjs executable file location |
+| [minify] | <code>Boolean</code> | <code>false</code> | True to minify the generated code |
 
 <a name="GoLoader+runGoScript2JS"></a>
 
-### GoLoader#runGoScript2JS(goFile) ⇒ <code>String</code>
+### GoLoader#runGoScript2JS(goFile, [options]) ⇒ <code>String</code>
 Converts the provided go file into JS script text.
 
 **Returns**: <code>String</code> - The JS string of the converted go script  
 **Access:** public  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| goFile | <code>String</code> | The google go script file path |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| goFile | <code>String</code> |  | The google go script file path |
+| [options] | <code>Object</code> |  | Optional runtime options |
+| [options.minify] | <code>Boolean</code> | <code>process.env.NODE_GO_REQUIRE_MINIFY</code> | True to minify the generated code |
 
 <a name="GoLoader+loadGoScript"></a>
 
-### GoLoader#loadGoScript(goFile, goModule) ⇒ <code>Object</code>
+### GoLoader#loadGoScript(goFile, goModule, [options]) ⇒ <code>Object</code>
 Converts the provided google go file into JS script and loads it into
 the node runtime.
 
 **Returns**: <code>Object</code> - The JS module  
 **Access:** public  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| goFile | <code>String</code> | The go script file path |
-| goModule | <code>Object</code> | The module for the go script |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| goFile | <code>String</code> |  | The go script file path |
+| goModule | <code>Object</code> |  | The module for the go script |
+| [options] | <code>Object</code> |  | Optional runtime options |
+| [options.minify] | <code>Boolean</code> | <code>process.env.NODE_GO_REQUIRE_MINIFY</code> | True to minify the generated code |
 
 <a name="NodeGoRequire"></a>
 

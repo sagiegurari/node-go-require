@@ -95,6 +95,12 @@ pet.SetName('new name...');
 console.log(pet.Name());
 ```
 
+In order to generate minified javascript code, first set the following environment variable:
+
+```sh
+NODE_GO_REQUIRE_MINIFY=TRUE
+```
+
 <a name="installation"></a>
 ## Installation
 In order to use this library, just run the following npm install command:
@@ -129,6 +135,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2017-01-13  | v1.0.24 | Maintenance |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
 | 2016-07-25  | v0.1.1  | Maintenance |

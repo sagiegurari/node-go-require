@@ -10,12 +10,12 @@ require('../../lib/node-go-require');
 
 require('../helpers/helper').modifyTestLoader();
 
-describe('Node Go Tests', function () {
+describe('Node Go', function () {
     it('require setup', function () {
         assert.isFunction(require.extensions['.go']);
     });
 
-    it('require test', function () {
+    it('require', function () {
         this.timeout(90000);
 
         var goFile = path.resolve(__dirname, '../helpers/main/main.go');
