@@ -18,8 +18,8 @@ script files as JS files.</p>
 
 ## GoLoader
 **Kind**: global class  
-**Access:** public  
-**Author:** Sagie Gur-Ari  
+**Access**: public  
+**Author**: Sagie Gur-Ari  
 
 * [GoLoader](#GoLoader)
     * [new GoLoader()](#new_GoLoader_new)
@@ -40,7 +40,7 @@ node runtime as JS files.
 Runs the gopherjs converter process.
 
 **Returns**: <code>String</code> - The generate command  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -54,7 +54,7 @@ Runs the gopherjs converter process.
 Runs the gopherjs converter process.
 
 **Returns**: <code>Object</code> - The process execution output (see shelljs for more information)  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ Runs the gopherjs converter process.
 Converts the provided go file into JS script text.
 
 **Returns**: <code>String</code> - The JS string of the converted go script  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ Converts the provided google go file into JS script and loads it into
 the node runtime.
 
 **Returns**: <code>Object</code> - The JS module  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -99,7 +99,7 @@ Extends the require capabilities to allow loading of google go
 script files as JS files.
 
 **Kind**: global namespace  
-**Author:** Sagie Gur-Ari  
+**Author**: Sagie Gur-Ari  
 **Example**  
 In order to use google go scripts under node, you need to first require this library as follows
 ```js
@@ -152,13 +152,13 @@ func main() {
 ### NodeGoRequire.goLoader : <code>[GoLoader](#GoLoader)</code>
 The GO loader instance.
 
-**Access:** public  
+**Access**: public  
 <a name="NodeGoRequire.requireGo"></a>
 
 ### NodeGoRequire.requireGo(goModule, fileName)
 The node require implementation for google go scripts.
 
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |

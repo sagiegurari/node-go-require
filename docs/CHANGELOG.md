@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-02-10  | v1.0.26 | Maintenance |
+| 2017-03-09  | v1.0.28 | Maintenance |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2017-01-13  | v1.0.24 | Maintenance |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |

@@ -9,7 +9,7 @@ node_js:
   - "0.10"
   - "iojs"
 before_install:
-  - npm install -g npm
+  - npm install -g npm@^3
 before_script:
   - chmod -R 777 ./project/build/integration
 env:
