@@ -135,7 +135,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-04-18  | v1.0.32 | Maintenance |
+| 2017-04-19  | v1.0.33 | Maintenance |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2017-01-13  | v1.0.24 | Maintenance |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
