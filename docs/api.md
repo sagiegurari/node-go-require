@@ -144,12 +144,12 @@ func main() {
 ```
 
 * [NodeGoRequire](#NodeGoRequire) : <code>object</code>
-    * [.goLoader](#NodeGoRequire.goLoader) : <code>[GoLoader](#GoLoader)</code>
+    * [.goLoader](#NodeGoRequire.goLoader) : [<code>GoLoader</code>](#GoLoader)
     * [.requireGo(goModule, fileName)](#NodeGoRequire.requireGo)
 
 <a name="NodeGoRequire.goLoader"></a>
 
-### NodeGoRequire.goLoader : <code>[GoLoader](#GoLoader)</code>
+### NodeGoRequire.goLoader : [<code>GoLoader</code>](#GoLoader)
 The GO loader instance.
 
 **Access**: public  
