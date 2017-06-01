@@ -2,6 +2,7 @@ language: node_js
 sudo: true
 node_js:
   - "node"
+  - "8"
   - "6"
   - "4"
   - "0.12"
