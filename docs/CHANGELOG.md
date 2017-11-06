@@ -1,10 +1,8 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-06-26  | v1.0.44 | Maintenance |
+| 2017-11-06  | v1.0.45 | Maintenance |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
-| 2017-01-13  | v1.0.24 | Maintenance |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
-| 2016-07-25  | v0.1.1  | Maintenance |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |
 | 2015-02-09  | v0.0.15 | Grunt cleanups. |
 | 2015-02-06  | v0.0.14 | Doc changes |
