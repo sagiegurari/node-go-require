@@ -135,7 +135,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-11-06  | v1.0.45 | Maintenance |
+| 2018-01-22  | v1.1.0  | Removed shelljs dependency and raised minimum node.js version to 0.12 |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
 | 2015-02-14  | v0.0.16 | Modified tests and examples due to changes in gopherjs API |

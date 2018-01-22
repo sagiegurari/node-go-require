@@ -2,6 +2,9 @@
 
 var fs = require('fs');
 var path = require('path');
+var childProcess = require('child_process');
+var chai = require('chai');
+var assert = chai.assert;
 
 module.exports = {
     modifyTestLoader: function () {
@@ -21,16 +24,14 @@ module.exports = {
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
             console.log('Running tests without GO/gopherjs installed.');
 
-            var shell = require('shelljs');
-            shell.exec = function (cmd) {
-                cmd = cmd.substring(cmd.indexOf(' build '));
-                var start = cmd.indexOf('"');
-                var goFile = cmd.substring(start + 1, cmd.indexOf('"', start + 2));
+            childProcess.spawnSync = function (cmd, args) {
+                assert.isTrue(cmd.indexOf('gopherjs') !== -1);
+                var goFile = args[args.length - 1];
 
                 if (goFile.indexOf('error.go') !== -1) {
                     return {
-                        code: 1,
-                        output: 'mock error'
+                        status: 1,
+                        stdio: 'mock error'
                     };
                 }
 
@@ -47,7 +48,7 @@ module.exports = {
                 jsFile = path.basename(jsFile);
                 jsPath = path.join(tempPath, jsFile);
 
-                if (cmd.indexOf('-m') !== -1) {
+                if (args[1] === '-m') {
                     jsString = jsString.split('\n').join('');
                 }
 
@@ -56,7 +57,7 @@ module.exports = {
                 });
 
                 return {
-                    code: 0
+                    status: 0
                 };
             };
         }

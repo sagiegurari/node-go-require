@@ -23,7 +23,7 @@ script files as JS files.</p>
 
 * [GoLoader](#GoLoader)
     * [new GoLoader()](#new_GoLoader_new)
-    * [#createGopherJSCommand(goFile, gopherjs, [minify])](#GoLoader+createGopherJSCommand) ⇒ <code>String</code>
+    * [#createGopherJSCommandArgs(goFile, [minify])](#GoLoader+createGopherJSCommandArgs) ⇒ <code>String</code>
     * [#runGopherJS(goFile, gopherjs, [minify])](#GoLoader+runGopherJS) ⇒ <code>Object</code>
     * [#runGoScript2JS(goFile, [options])](#GoLoader+runGoScript2JS) ⇒ <code>String</code>
     * [#loadGoScript(goFile, goModule, [options])](#GoLoader+loadGoScript) ⇒ <code>Object</code>
@@ -34,18 +34,17 @@ script files as JS files.</p>
 The GoLoader enables to load google go script files and to load them into the
 node runtime as JS files.
 
-<a name="GoLoader+createGopherJSCommand"></a>
+<a name="GoLoader+createGopherJSCommandArgs"></a>
 
-### GoLoader#createGopherJSCommand(goFile, gopherjs, [minify]) ⇒ <code>String</code>
-Runs the gopherjs converter process.
+### GoLoader#createGopherJSCommandArgs(goFile, [minify]) ⇒ <code>String</code>
+Returns the gopher js command arguments.
 
-**Returns**: <code>String</code> - The generate command  
+**Returns**: <code>String</code> - The command arguments  
 **Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | goFile | <code>String</code> |  | The google go script file path |
-| gopherjs | <code>String</code> |  | The gopherjs executable file location |
 | [minify] | <code>Boolean</code> | <code>false</code> | True to minify the generated code |
 
 <a name="GoLoader+runGopherJS"></a>

@@ -82,23 +82,33 @@ describe('Go Loader', function () {
         });
     });
 
-    describe('createGopherJSCommand', function () {
+    describe('createGopherJSCommandArgs', function () {
         it('no minify', function () {
-            var command = goLoader.createGopherJSCommand('./test.go', 'run');
+            var args = goLoader.createGopherJSCommandArgs('./test.go');
 
-            assert.strictEqual(command, '"run" build "./test.go"');
+            assert.deepEqual(args, [
+                'build',
+                './test.go'
+            ]);
         });
 
         it('minify false', function () {
-            var command = goLoader.createGopherJSCommand('./test.go', 'run', false);
+            var args = goLoader.createGopherJSCommandArgs('./test.go', false);
 
-            assert.strictEqual(command, '"run" build "./test.go"');
+            assert.deepEqual(args, [
+                'build',
+                './test.go'
+            ]);
         });
 
         it('minify true', function () {
-            var command = goLoader.createGopherJSCommand('./test.go', 'run', true);
+            var args = goLoader.createGopherJSCommandArgs('./test.go', true);
 
-            assert.strictEqual(command, '"run" build -m "./test.go"');
+            assert.deepEqual(args, [
+                'build',
+                '-m',
+                './test.go'
+            ]);
         });
     });
 });
