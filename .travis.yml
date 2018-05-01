@@ -2,18 +2,16 @@ language: node_js
 sudo: true
 node_js:
   - "node"
+  - "10"
   - "8"
   - "6"
-  - "4"
 matrix:
   allow_failures:
     - node_js: node
-before_install:
-  - npm install -g npm@latest
 before_script:
   - chmod -R 777 ./project/build/integration
 env:
   global:
-    - DOCKER_INTEGRATION_TEST_NODE_VERSION=8
+    - DOCKER_INTEGRATION_TEST_NODE_VERSION=10
 services:
   - docker
