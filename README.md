@@ -1,8 +1,7 @@
 # node-go-require
 
-[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://travis-ci.org/sagiegurari/node-go-require.svg)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-go-require/badge.svg)](https://coveralls.io/r/sagiegurari/node-go-require) [![bitHound Code](https://www.bithound.io/github/sagiegurari/node-go-require/badges/code.svg)](https://www.bithound.io/github/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require)<br>
-[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Dependency Status](https://david-dm.org/sagiegurari/node-go-require.svg)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://david-dm.org/sagiegurari/node-go-require/dev-status.svg)](https://david-dm.org/sagiegurari/node-go-require?type=dev)<br>
-[![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/node-go-require/badge.svg)](https://snyk.io/test/github/sagiegurari/node-go-require) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/node-go-require/master/package.json)
+[![NPM Version](http://img.shields.io/npm/v/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Build Status](https://travis-ci.org/sagiegurari/node-go-require.svg)](http://travis-ci.org/sagiegurari/node-go-require) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-go-require/badge.svg)](https://coveralls.io/r/sagiegurari/node-go-require) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/node-go-require/badge.svg)](https://snyk.io/test/github/sagiegurari/node-go-require) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-go-require.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-go-require)<br>
+[![License](https://img.shields.io/npm/l/node-go-require.svg?style=flat)](https://github.com/sagiegurari/node-go-require/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-go-require.svg?style=flat)](https://www.npmjs.org/package/node-go-require) [![Dependency Status](https://david-dm.org/sagiegurari/node-go-require.svg)](https://david-dm.org/sagiegurari/node-go-require) [![devDependency Status](https://david-dm.org/sagiegurari/node-go-require/dev-status.svg)](https://david-dm.org/sagiegurari/node-go-require?type=dev)
 
 > Load google go script as any javascript modules under nodeJS runtime.
 
@@ -135,7 +134,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-04-30  | v1.1.1  | Maintenance |
+| 2018-06-13  | v1.1.2  | Maintenance |
 | 2018-01-22  | v1.1.0  | Removed shelljs dependency and raised minimum node.js version to 0.12 |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
