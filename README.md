@@ -134,7 +134,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2019-01-04  | v1.1.4  | Maintenance |
+| 2019-02-08  | v1.1.5  | Maintenance |
 | 2018-01-22  | v1.1.0  | Removed shelljs dependency and raised minimum node.js version to 0.12 |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
 | 2016-07-26  | v0.1.2  | Add integration test via docker |
