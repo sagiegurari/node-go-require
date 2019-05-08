@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.8
 FROM node:12
 
 RUN mkdir /test
