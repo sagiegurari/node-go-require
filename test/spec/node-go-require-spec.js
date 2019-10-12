@@ -1,7 +1,6 @@
 'use strict';
 
 /*jslint stupid: true, nomen: true*/
-/*global describe: false, it: false*/
 
 var path = require('path');
 var chai = require('chai');
