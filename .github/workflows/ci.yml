@@ -11,11 +11,12 @@ jobs:
       matrix:
         node-version: ['8.x', '10.x', '12.x', '14.x']
     steps:
-    - name: Setup Go Env
-      shell: bash
+    - name: Set GOPATH
       run: |
-        echo "::set-env name=GOPATH::${{ github.workspace }}/go"
-        echo "::add-path::${{ github.workspace }}/go/bin"
+          echo "##[set-env name=GOPATH;]$(dirname $GITHUB_WORKSPACE)"
+          echo "##[add-path]$(dirname $GITHUB_WORKSPACE)/bin"
+          echo "##[add-path]$(dirname $GITHUB_WORKSPACE)/bin/windows_386"
+      shell: bash
     - name: Install Go
       uses: actions/setup-go@v2
       with:
