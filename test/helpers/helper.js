@@ -1,20 +1,20 @@
 'use strict';
 
-var fs = require('fs');
-var path = require('path');
-var childProcess = require('child_process');
-var chai = require('chai');
-var assert = chai.assert;
+const fs = require('fs');
+const path = require('path');
+const childProcess = require('child_process');
+const chai = require('chai');
+const assert = chai.assert;
 
 module.exports = {
-    modifyTestLoader: function () {
-        var gopherjs;
+    modifyTestLoader() {
+        let gopherjs;
         if (process.env.GOPATH) {
-            var goPath = process.env.GOPATH || '';
+            const goPath = process.env.GOPATH || '';
             gopherjs = path.join(goPath, 'bin/gopherjs');
-            var isWin = (/^win/).test(process.platform);
+            const isWin = (/^win/).test(process.platform);
             if (isWin) {
-                gopherjs = gopherjs + '.exe';
+                gopherjs = `${gopherjs}.exe`;
             }
         } else {
             process.env.GOPATH = '';
@@ -26,7 +26,7 @@ module.exports = {
 
             childProcess.spawnSync = function (cmd, args) {
                 assert.isTrue(cmd.indexOf('gopherjs') !== -1);
-                var goFile = args[args.length - 1];
+                const goFile = args[args.length - 1];
 
                 if (goFile.indexOf('error.go') !== -1) {
                     return {
@@ -36,15 +36,15 @@ module.exports = {
                 }
 
                 /*jslint nomen: true */
-                var jsPath = path.join(__dirname, 'pet-helper.js');
+                let jsPath = path.join(__dirname, 'pet-helper.js');
                 /*jslint nomen: false */
-                var jsString = fs.readFileSync(jsPath, {
+                let jsString = fs.readFileSync(jsPath, {
                     encoding: 'utf8'
                 });
 
                 //get output JS file
-                var tempPath = '.';
-                var jsFile = goFile.substring(0, goFile.length - 'go'.length) + 'js';
+                const tempPath = '.';
+                let jsFile = goFile.substring(0, goFile.length - 'go'.length) + 'js';
                 jsFile = path.basename(jsFile);
                 jsPath = path.join(tempPath, jsFile);
 

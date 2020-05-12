@@ -2,16 +2,16 @@
 
 /*jslint stupid: true, nomen: true*/
 
-var path = require('path');
-var chai = require('chai');
-var assert = chai.assert;
-var rimraf = require('rimraf');
-var goLoader = require('../../lib/go-loader');
+const path = require('path');
+const chai = require('chai');
+const assert = chai.assert;
+const rimraf = require('rimraf');
+const goLoader = require('../../lib/go-loader');
 
 require('../helpers/helper').modifyTestLoader();
 
 describe('Go Loader', function () {
-    var tempPath = path.join(__dirname, '../../.temp');
+    const tempPath = path.join(__dirname, '../../.temp');
 
     rimraf.sync(tempPath);
 
@@ -21,8 +21,8 @@ describe('Go Loader', function () {
 
             delete process.env.NODE_GO_REQUIRE_MINIFY;
 
-            var goFile = path.resolve(__dirname, '../helpers/main/main.go');
-            var js = goLoader.runGoScript2JS(goFile);
+            const goFile = path.resolve(__dirname, '../helpers/main/main.go');
+            const js = goLoader.runGoScript2JS(goFile);
 
             assert.isString(js);
             assert.isTrue(js.length > 0);
@@ -31,15 +31,15 @@ describe('Go Loader', function () {
         it('minified', function () {
             this.timeout(180000);
 
-            var goFile = path.resolve(__dirname, '../helpers/main/main.go');
+            const goFile = path.resolve(__dirname, '../helpers/main/main.go');
 
             process.env.NODE_GO_REQUIRE_MINIFY = 'FALSE';
-            var unminified = goLoader.runGoScript2JS(goFile);
+            const unminified = goLoader.runGoScript2JS(goFile);
             assert.isString(unminified);
             assert.isTrue(unminified.length > 0);
 
             process.env.NODE_GO_REQUIRE_MINIFY = 'TRUE';
-            var minified = goLoader.runGoScript2JS(goFile);
+            const minified = goLoader.runGoScript2JS(goFile);
             assert.isString(minified);
             assert.isTrue(minified.length > 0);
 
@@ -49,17 +49,17 @@ describe('Go Loader', function () {
         it('options', function () {
             this.timeout(180000);
 
-            var goFile = path.resolve(__dirname, '../helpers/main/main.go');
+            const goFile = path.resolve(__dirname, '../helpers/main/main.go');
 
             process.env.NODE_GO_REQUIRE_MINIFY = 'FALSE';
-            var minified = goLoader.runGoScript2JS(goFile, {
+            const minified = goLoader.runGoScript2JS(goFile, {
                 minify: true //opposite of env
             });
             assert.isString(minified);
             assert.isTrue(minified.length > 0);
 
             process.env.NODE_GO_REQUIRE_MINIFY = 'TRUE';
-            var unminified = goLoader.runGoScript2JS(goFile, {
+            const unminified = goLoader.runGoScript2JS(goFile, {
                 minify: false //opposite of env
             });
             assert.isString(unminified);
@@ -71,9 +71,9 @@ describe('Go Loader', function () {
         it('error', function () {
             this.timeout(90000);
 
-            var goFile = path.resolve(__dirname, '../helpers/main/error.go');
+            const goFile = path.resolve(__dirname, '../helpers/main/error.go');
             try {
-                var js = goLoader.runGoScript2JS(goFile);
+                const js = goLoader.runGoScript2JS(goFile);
                 assert.notOk(js);
             } catch (error) {
                 assert.isDefined(error);
@@ -83,7 +83,7 @@ describe('Go Loader', function () {
 
     describe('createGopherJSCommandArgs', function () {
         it('no minify', function () {
-            var args = goLoader.createGopherJSCommandArgs('./test.go');
+            const args = goLoader.createGopherJSCommandArgs('./test.go');
 
             assert.deepEqual(args, [
                 'build',
@@ -92,7 +92,7 @@ describe('Go Loader', function () {
         });
 
         it('minify false', function () {
-            var args = goLoader.createGopherJSCommandArgs('./test.go', false);
+            const args = goLoader.createGopherJSCommandArgs('./test.go', false);
 
             assert.deepEqual(args, [
                 'build',
@@ -101,7 +101,7 @@ describe('Go Loader', function () {
         });
 
         it('minify true', function () {
-            var args = goLoader.createGopherJSCommandArgs('./test.go', true);
+            const args = goLoader.createGopherJSCommandArgs('./test.go', true);
 
             assert.deepEqual(args, [
                 'build',

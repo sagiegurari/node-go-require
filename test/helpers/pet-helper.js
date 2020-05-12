@@ -14,7 +14,7 @@ Pet.prototype.SetName = function (name) {
 
 module.exports = {
     pet: {
-        New: function (name) {
+        New(name) {
             return new Pet(name);
         }
     }

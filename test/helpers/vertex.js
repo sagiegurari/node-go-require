@@ -2,8 +2,8 @@
 
 require('../..');
 
-var jsModule = require('./main/vertex.go');
+const jsModule = require('./main/vertex.go');
 
-var vertex = jsModule.vertex.New(2, 6);
+const vertex = jsModule.vertex.New(2, 6);
 
 console.log(vertex.Abs());

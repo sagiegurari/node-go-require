@@ -2,9 +2,9 @@
 
 require('../..');
 
-var mainGo = require('./main/pet.go');
+const mainGo = require('./main/pet.go');
 
-var pet = mainGo.pet.New('my pet');
+const pet = mainGo.pet.New('my pet');
 
 console.log(pet.Name());
 

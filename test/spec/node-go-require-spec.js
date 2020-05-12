@@ -2,9 +2,9 @@
 
 /*jslint stupid: true, nomen: true*/
 
-var path = require('path');
-var chai = require('chai');
-var assert = chai.assert;
+const path = require('path');
+const chai = require('chai');
+const assert = chai.assert;
 require('../../lib/node-go-require');
 
 require('../helpers/helper').modifyTestLoader();
@@ -17,11 +17,11 @@ describe('Node Go', function () {
     it('require', function () {
         this.timeout(90000);
 
-        var goFile = path.resolve(__dirname, '../helpers/main/main.go');
-        var jsModule = require(goFile);
+        const goFile = path.resolve(__dirname, '../helpers/main/main.go');
+        const jsModule = require(goFile);
 
-        var pet = jsModule.pet.New('my pet');
-        var output = pet.Name();
+        const pet = jsModule.pet.New('my pet');
+        let output = pet.Name();
         assert.equal('my pet', output);
         pet.SetName('new name');
         output = pet.Name();

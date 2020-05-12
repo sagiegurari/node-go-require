@@ -1,7 +1,7 @@
 'use strict';
 
-var chai = require('chai');
-var assert = chai.assert;
+const chai = require('chai');
+const assert = chai.assert;
 require('../../');
 
 describe('Index', function () {

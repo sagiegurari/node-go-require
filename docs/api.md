@@ -106,9 +106,9 @@ require('node-go-require');
 ```
 Now you can require your google go files like any other javascript files, for example:
 ```js
-var petGo = require('./pet.go');
+const petGo = require('./pet.go');
 
-var pet = petGo.pet.New('my pet');
+const pet = petGo.pet.New('my pet');
 console.log(pet.Name());
 pet.SetName('new name...');
 console.log(pet.Name());

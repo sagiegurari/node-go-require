@@ -5,9 +5,7 @@
 /*eslint-disable no-underscore-dangle*/
 
 module.exports = function (grunt) {
-    var commons = require('js-project-commons');
-
-    grunt.loadNpmTasks('grunt-shell');
+    const commons = require('js-project-commons');
 
     commons.grunt.config.initConfig(grunt, {
         buildConfig: {

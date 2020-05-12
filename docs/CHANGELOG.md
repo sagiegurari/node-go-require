@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-05-12  | v2.0.0  | Migrate to github actions and upgrade minimal node version |
 | 2019-02-08  | v1.1.5  | Maintenance |
 | 2018-01-22  | v1.1.0  | Removed shelljs dependency and raised minimum node.js version to 0.12 |
 | 2017-02-07  | v1.0.25 | Ability to generate minified js code |
