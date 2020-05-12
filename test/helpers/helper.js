@@ -8,20 +8,30 @@ const assert = chai.assert;
 
 module.exports = {
     modifyTestLoader() {
-        let gopherjs;
+        let gopherjs = 'gopherjs';
+        const isWin = (/^win/).test(process.platform);
+        if (isWin) {
+            gopherjs = `${gopherjs}.exe`;
+        }
         if (process.env.GOPATH) {
             const goPath = process.env.GOPATH || '';
-            gopherjs = path.join(goPath, 'bin/gopherjs');
-            const isWin = (/^win/).test(process.platform);
-            if (isWin) {
-                gopherjs = `${gopherjs}.exe`;
-            }
+            gopherjs = path.join(goPath, 'bin', gopherjs);
         } else {
             process.env.GOPATH = '';
         }
 
         /*jslint stupid: true */
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
+            const processOutput = childProcess.spawnSync(gopherjs, ['-help'], {
+                windowsHide: true
+            });
+
+            if (processOutput.status !== 0) {
+                gopherjs = null;
+            }
+        }
+
+        if (!gopherjs) {
             console.log('Running tests without GO/gopherjs installed.');
 
             childProcess.spawnSync = function (cmd, args) {
