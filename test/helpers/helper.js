@@ -22,16 +22,6 @@ module.exports = {
 
         /*jslint stupid: true */
         if ((!gopherjs) || (!fs.existsSync(gopherjs))) {
-            const processOutput = childProcess.spawnSync(gopherjs, ['-help'], {
-                windowsHide: true
-            });
-
-            if (processOutput.status !== 0) {
-                gopherjs = null;
-            }
-        }
-
-        if (!gopherjs) {
             console.log('Running tests without GO/gopherjs installed.');
 
             childProcess.spawnSync = function (cmd, args) {
