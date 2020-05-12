@@ -10,7 +10,8 @@ module.exports = function (grunt) {
     commons.grunt.config.initConfig(grunt, {
         buildConfig: {
             projectRoot: __dirname,
-            nodeProject: true
+            nodeProject: true,
+            skipSecurityCheck: true
         }
     });
 };
