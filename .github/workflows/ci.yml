@@ -21,10 +21,10 @@ jobs:
     - name: Install Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17.1
+        go-version: 1.17.x
     - name: Set GO Version
       run: |
-          echo "##[set-env name=GOPHERJS_GOROOT;]$(go1.17.1 env GOROOT)"
+          echo "##[set-env name=GOPHERJS_GOROOT;]$(go env GOROOT)"
       shell: bash
     - name: Install gopherjs
       run: go get -u github.com/gopherjs/gopherjs
