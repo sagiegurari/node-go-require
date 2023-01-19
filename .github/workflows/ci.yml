@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: ['12.x', '14.x']
+        node-version: ['18.x']
     steps:
     - name: Set GOPATH
       run: |
