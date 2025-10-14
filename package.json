@@ -43,7 +43,7 @@
     "chai": "^4",
     "eslint": "^8",
     "js-beautify": "^1",
-    "jsdoc-to-markdown": "^7",
+    "jsdoc-to-markdown": "^8",
     "mocha": "^10",
     "nyc": "^15",
     "rimraf": "^4",
