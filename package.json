@@ -46,7 +46,7 @@
     "jsdoc-to-markdown": "^8",
     "mocha": "^10",
     "nyc": "^15",
-    "rimraf": "^4",
+    "rimraf": "^6",
     "stylelint": "^13",
     "stylelint-config-standard": "^22"
   }
