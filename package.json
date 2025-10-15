@@ -44,7 +44,7 @@
     "eslint": "^8",
     "js-beautify": "^1",
     "jsdoc-to-markdown": "^8",
-    "mocha": "^10",
+    "mocha": "^11",
     "nyc": "^15",
     "rimraf": "^4",
     "stylelint": "^13",
