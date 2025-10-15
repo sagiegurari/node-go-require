@@ -48,6 +48,6 @@
     "nyc": "^15",
     "rimraf": "^4",
     "stylelint": "^13",
-    "stylelint-config-standard": "^22"
+    "stylelint-config-standard": "^39"
   }
 }
