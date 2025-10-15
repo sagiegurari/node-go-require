@@ -47,7 +47,7 @@
     "mocha": "^10",
     "nyc": "^15",
     "rimraf": "^4",
-    "stylelint": "^13",
+    "stylelint": "^16",
     "stylelint-config-standard": "^22"
   }
 }
